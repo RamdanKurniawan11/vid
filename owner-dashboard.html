@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0d0b27">
+  <title>Dashboard Owner — Villa Istana Damar</title>
+  <link rel="icon" type="image/png" href="logo.png">
+  <link rel="stylesheet" href="admin.css">
+  <link rel="stylesheet" href="owner.css">
+</head>
+<body class="owner-page">
+  <div class="admin-app owner-app">
+    <div class="mobile-scrim" data-close-menu></div>
+    <aside class="sidebar">
+      <a class="brand" href="owner-dashboard.html?demoRole=owner"><img src="logo.png" alt=""><span>Villa Istana Damar<small>OWNER PORTAL</small></span></a>
+      <div class="nav-label">Portal owner</div>
+      <nav class="side-nav" aria-label="Navigasi owner">
+        <a href="#overview" class="active" data-owner-view="overview"><span class="owner-nav-icon">▦</span><span>Ringkasan</span></a>
+        <a href="#calendar" data-owner-view="calendar"><span class="owner-nav-icon">▣</span><span>Kalender villa</span></a>
+        <a href="#reports" data-owner-view="reports"><span class="owner-nav-icon">▤</span><span>Laporan keuangan</span></a>
+        <a href="#villas" data-owner-view="villas"><span class="owner-nav-icon">⌂</span><span>Villa saya</span><span class="nav-count">2</span></a>
+      </nav>
+      <div class="sidebar-bottom">
+        <a class="owner-site-link" href="index.html">↗ Lihat website</a>
+        <a class="owner-logout-link" href="login.html?loggedOut=1" data-owner-logout>↪ Keluar</a>
+        <div class="admin-profile"><span class="avatar owner-avatar">AS</span><span><strong>Andi Saputra</strong><small>Pemilik · 2 villa</small></span></div>
+      </div>
+    </aside>
+    <main class="main">
+      <header class="topbar">
+        <div class="topbar-left"><button class="menu-toggle" type="button" aria-label="Buka menu" data-menu-toggle>☰</button><div><p class="crumb">Villa Istana Damar / Owner</p><h1 id="owner-page-title">Ringkasan owner</h1></div></div>
+        <div class="top-actions"><span class="today-pill" id="owner-today"></span><span class="user-chip"><span class="avatar owner-avatar">AS</span><span>Andi Saputra</span></span></div>
+      </header>
+      <div class="page-content" id="owner-content"></div>
+    </main>
+  </div>
+  <div id="owner-dialog-root"></div>
+  <script src="owner.js"></script>
+</body>
+</html>

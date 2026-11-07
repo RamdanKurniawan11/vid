@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="48" height="48" viewBox="0 0 48 48">
+    <defs>
+        <linearGradient id="b" x1="90.173%" x2="37.913%" y1="7.916%" y2="96.386%">
+            <stop offset="0%" stop-color="#FFEFB1"/>
+            <stop offset="100%" stop-color="#FFB155"/>
+        </linearGradient>
+        <circle id="a" cx="24" cy="24" r="24"/>
+        <linearGradient id="f" x1="50%" x2="50%" y1="0%" y2="111.844%">
+            <stop offset="0%" stop-color="#FFAB45"/>
+            <stop offset="100%" stop-color="#F16517"/>
+        </linearGradient>
+        <circle id="e" cx="24" cy="24" r="16"/>
+        <filter id="d" width="143.7%" height="143.7%" x="-21.9%" y="-15.6%" filterUnits="objectBoundingBox">
+            <feOffset dy="2" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="2"/>
+            <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0.811339447 0 0 0 0 0.133450498 0 0 0 0 0.430656508 0 0 0 0.545481862 0"/>
+        </filter>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <mask id="c" fill="#fff">
+            <use xlink:href="#a"/>
+        </mask>
+        <use fill="url(#b)" xlink:href="#a"/>
+        <g mask="url(#c)">
+            <use fill="#000" filter="url(#d)" xlink:href="#e"/>
+            <use fill="url(#f)" xlink:href="#e"/>
+        </g>
+        <path stroke="#FFF" stroke-width="2" d="M31.898 31.94A11.165 11.165 0 0 0 35.2 24c0-3.02-1.195-5.76-3.137-7.774A11.167 11.167 0 0 0 24 12.8c-6.186 0-11.2 5.014-11.2 11.2 0 3.13 1.284 5.96 3.355 7.993" mask="url(#c)" opacity=".3" style="mix-blend-mode:screen"/>
+        <path stroke="#FFF" stroke-width="2" d="M32.063 16.226A11.167 11.167 0 0 0 24 12.8c-6.186 0-11.2 5.014-11.2 11.2 0 3.13 1.284 5.96 3.355 7.993" mask="url(#c)"/>
+        <path stroke="#FFF" stroke-linecap="round" d="M24 24l4.8-4.8" mask="url(#c)"/>
+        <circle cx="24" cy="24" r="1.6" fill="#FFF" mask="url(#c)"/>
+    </g>
+</svg>
