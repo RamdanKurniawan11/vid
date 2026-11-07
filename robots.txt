@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Disallow: /login.html
+Disallow: /admin.html
+Disallow: /admin-
+Disallow: /owner-dashboard.html
+
+Sitemap: https://villaistanadamar.com/sitemap.xml
